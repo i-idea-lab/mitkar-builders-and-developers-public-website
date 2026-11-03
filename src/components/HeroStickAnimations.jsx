@@ -415,16 +415,16 @@ export default function HeroStickAnimations() {
   const [visible, setVisible] = useState(true);
   const elementRef = useRef(null);
 
-  // Four safe positioning zones framing the central text without blocking it
+  // Four safe positioning zones framing the central text within the exact vertical height of the content
   const zones = [
-    // Zone 0: Top-Left
-    'left-2 sm:left-6 lg:left-10 top-2 sm:top-6 lg:top-8',
-    // Zone 1: Top-Right
-    'right-2 sm:right-6 lg:right-10 top-2 sm:top-6 lg:top-8',
-    // Zone 2: Bottom-Left
-    'left-2 sm:left-6 lg:left-12 bottom-1 sm:bottom-4 lg:bottom-6',
-    // Zone 3: Bottom-Right
-    'right-2 sm:right-6 lg:right-12 bottom-1 sm:bottom-4 lg:bottom-6',
+    // Zone 0: Top-Left (aligned with the upper content height)
+    'left-0 sm:left-4 lg:left-8 top-0 sm:top-2',
+    // Zone 1: Top-Right (aligned with the upper content height)
+    'right-0 sm:right-4 lg:right-8 top-0 sm:top-2',
+    // Zone 2: Bottom-Left (aligned with the lower content height)
+    'left-0 sm:left-4 lg:left-10 bottom-0 sm:bottom-2',
+    // Zone 3: Bottom-Right (aligned with the lower content height)
+    'right-0 sm:right-4 lg:right-10 bottom-0 sm:bottom-2',
   ];
 
   const items = [

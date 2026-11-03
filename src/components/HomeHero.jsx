@@ -37,14 +37,15 @@ export default function HomeHero() {
       {/* Animated GSAP Moving Net Checkered Grid Background (Unchanged) */}
       <AnimatedGridBackground />
 
-      {/* Random Stick Machinery Animations with Border Streaks (Crane, Truck, Excavator, Theodolite) */}
-      <HeroStickAnimations />
-
       {/* Ambient Lighting Orbs */}
       <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[550px] bg-gradient-to-tr from-[#d4af37]/15 via-[#997b28]/10 to-transparent rounded-full blur-[150px]" />
       <div className="pointer-events-none absolute bottom-12 right-12 w-[400px] h-[400px] bg-amber-600/10 rounded-full blur-[140px]" />
 
       <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full text-center">
+        {/* Random Stick Machinery Animations with Border Streaks positioned within the exact content bounds */}
+        <HeroStickAnimations />
+
+        {/* Top Heritage Badge */}
         
         {/* Top Heritage Badge */}
         <div ref={badgeRef} className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#12141a]/90 px-4 py-1.5 shadow-[0_0_25px_rgba(212,175,55,0.2)] backdrop-blur-md mb-4 sm:mb-5">
