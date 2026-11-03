@@ -58,7 +58,7 @@ export default function HomeHero() {
 
         {/* Cinematic Kinetic Headline */}
         <h1 ref={headlineRef} className="font-display text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-5xl mx-auto">
-          <span className="block text-gold-gradient font-serif-luxury italic font-medium">
+          <span className="block text-white">
             ENGINEERING TOMORROW’S
           </span>
           <span className="block text-gold-gradient font-serif-luxury italic font-medium">
