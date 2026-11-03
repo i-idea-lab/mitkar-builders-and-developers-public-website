@@ -7,7 +7,6 @@ export default function HomeHero() {
   const containerRef = useRef(null);
   const badgeRef = useRef(null);
   const headlineRef = useRef(null);
-  const subtitleRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -23,11 +22,6 @@ export default function HomeHero() {
         opacity: 0,
         duration: 0.9,
         stagger: 0.12,
-      }, '-=0.4')
-      .from(subtitleRef.current, {
-        y: 20,
-        opacity: 0,
-        duration: 0.7,
       }, '-=0.4');
     }, containerRef);
 
@@ -67,11 +61,6 @@ export default function HomeHero() {
             Seawoods • Nerul • Ulwe • Panvel
           </span>
         </h1>
-
-        {/* Subtitle */}
-        <p ref={subtitleRef} className="mt-5 max-w-3xl mx-auto text-sm sm:text-base text-gray-300 font-normal leading-relaxed">
-          Founded in 1999 by civil engineer <strong className="text-white font-semibold">Mr. Muzakki Mitkar</strong>, Mitkar Group has sculpted over 25+ landmark residential towers, boutique luxury estates, and prime commercial hubs defined by structural mastery and transparent dealings.
-        </p>
 
       </div>
     </section>
