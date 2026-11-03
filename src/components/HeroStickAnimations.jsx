@@ -439,7 +439,7 @@ export default function HeroStickAnimations() {
   }, [items.length, zones.length]);
 
   return (
-    <div className="pointer-events-none absolute inset-0 w-full h-full overflow-hidden select-none z-10">
+    <div className="pointer-events-none absolute inset-0 w-full h-full overflow-hidden select-none z-10 hidden lg:block">
       <style>{`
         @keyframes streakGlide {
           0% { stroke-dashoffset: 0; }
