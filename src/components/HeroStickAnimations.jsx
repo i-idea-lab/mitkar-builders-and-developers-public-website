@@ -104,11 +104,6 @@ function StickTowerCrane() {
             </g>
           </g>
         </g>
-
-        {/* Micro CAD HUD Label */}
-        <text x="60" y="142" fill="#d4af37" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">
-          CRANE.01 // SLEW: ACTIVE
-        </text>
       </svg>
     </div>
   );
@@ -240,11 +235,6 @@ function StickCementTruck() {
           <line x1="0" y1="-9" x2="0" y2="9" stroke="#d4af37" strokeWidth="1" />
           <circle cx="0" cy="0" r="2.5" fill="#d4af37" />
         </g>
-
-        {/* Micro HUD Label */}
-        <text x="50" y="103" fill="#d4af37" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">
-          LOGISTICS.RMC // DRUM: ROTATING
-        </text>
       </svg>
     </div>
   );
@@ -339,11 +329,6 @@ function StickExcavator() {
             </g>
           </g>
         </g>
-
-        {/* Micro HUD Label */}
-        <text x="35" y="110" fill="#d4af37" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">
-          EXCAVATOR.03 // BEDROCK: PILING
-        </text>
       </svg>
     </div>
   );
@@ -398,11 +383,6 @@ function StickTheodolite() {
             </g>
           </g>
         </g>
-
-        {/* Micro HUD Label */}
-        <text x="25" y="115" fill="#d4af37" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">
-          LASER.SURVEY // ELEVATION: ±0.00mm
-        </text>
       </svg>
     </div>
   );
