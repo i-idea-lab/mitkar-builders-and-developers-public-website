@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Award } from 'lucide-react';
 import AnimatedGridBackground from './AnimatedGridBackground';
+import HeroStickAnimations from './HeroStickAnimations';
 
 export default function HomeHero() {
   const containerRef = useRef(null);
@@ -33,14 +34,17 @@ export default function HomeHero() {
       ref={containerRef}
       className="relative pt-28 pb-14 lg:pt-36 lg:pb-16 flex items-center justify-center overflow-hidden"
     >
-      {/* Animated GSAP Moving Net Checkered Grid Background */}
+      {/* Animated GSAP Moving Net Checkered Grid Background (Unchanged) */}
       <AnimatedGridBackground />
+
+      {/* Random Stick Machinery Animations with Border Streaks (Crane, Truck, Excavator, Theodolite) */}
+      <HeroStickAnimations />
 
       {/* Ambient Lighting Orbs */}
       <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[550px] bg-gradient-to-tr from-[#d4af37]/15 via-[#997b28]/10 to-transparent rounded-full blur-[150px]" />
       <div className="pointer-events-none absolute bottom-12 right-12 w-[400px] h-[400px] bg-amber-600/10 rounded-full blur-[140px]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full text-center">
+      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full text-center">
         
         {/* Top Heritage Badge */}
         <div ref={badgeRef} className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#12141a]/90 px-4 py-1.5 shadow-[0_0_25px_rgba(212,175,55,0.2)] backdrop-blur-md mb-4 sm:mb-5">
