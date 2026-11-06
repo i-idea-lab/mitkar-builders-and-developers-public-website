@@ -6,26 +6,36 @@ export default function FoundersStory() {
   const milestones = [
     {
       year: '1999',
+      tag: 'ORIGIN & ETHOS',
+      phase: 'Foundation Era',
       title: 'Foundation of Mitkar Builders & Developers',
       desc: 'Established with a core conviction: uncompromising civil engineering rigor, honest pricing, and transparency.'
     },
     {
       year: '2008',
+      tag: 'PALM BEACH CORRIDOR',
+      phase: 'Seawoods Expansion',
       title: 'Pioneering Seawoods Sector 50 & Palm Beach Corridor',
       desc: 'Delivered landmark residential towers like Apramit, N.M. Heights, and Villa Castle setting new benchmarks in quality.'
     },
     {
       year: '2016',
+      tag: 'TRANSIT HUBS',
+      phase: 'Regional Scale',
       title: 'Expansion into Nerul & Ulwe Coastal Nodes',
       desc: 'Delivered M. Con Pride and Anmol Heritage, pioneering early developments aligned with the upcoming international airport.'
     },
     {
       year: '2024',
+      tag: 'FLAGSHIP ICON',
+      phase: 'Mixed Landmark',
       title: 'Jewel of Panvel: The Flagship Mixed Development',
       desc: 'Launched the grand 2-acre, 4-tower icon on M.G. Road with 26,000 sq.ft of podium lifestyle amenities.'
     },
     {
       year: '2026+',
+      tag: 'NEXT GENERATION',
+      phase: 'Smart Living',
       title: 'Future Horizons & Sustainable Smart Communities',
       desc: 'Expanding into ultra-luxury eco-penthouses, solar-grid communities, and commercial business arcades.'
     }
@@ -130,9 +140,20 @@ export default function FoundersStory() {
                 </div>
 
                 {/* Timeline content */}
-                <div className="p-5 rounded-2xl border border-white/10 bg-[#101217] group-hover:border-[#d4af37]/50 group-hover:bg-[#d4af37]/5 transition-all">
-                  <div className="inline-block rounded-full bg-[#d4af37]/20 px-3 py-0.5 text-xs font-mono font-bold text-[#f5d77f] mb-2 border border-[#d4af37]/30">
-                    {item.year}
+                <div className="p-5 sm:p-6 rounded-2xl border border-white/10 bg-[#101217] group-hover:border-[#d4af37]/50 group-hover:bg-[#d4af37]/5 transition-all">
+                  <div className="flex items-center justify-between gap-4 mb-2.5">
+                    <div className="inline-block rounded-full bg-[#d4af37]/20 px-3 py-0.5 text-xs font-mono font-bold text-[#f5d77f] border border-[#d4af37]/30">
+                      {item.year}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-mono text-[#d4af37] tracking-widest uppercase font-semibold">
+                        {item.tag}
+                      </span>
+                      <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-white/20" />
+                      <span className="hidden sm:inline-block text-[11px] font-mono text-gray-400">
+                        {item.phase}
+                      </span>
+                    </div>
                   </div>
                   <h4 className="text-base font-display font-bold text-white group-hover:text-[#f5d77f] transition-colors">
                     {item.title}

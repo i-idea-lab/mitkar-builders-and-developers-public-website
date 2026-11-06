@@ -27,26 +27,36 @@ export default function LegacyPage({ onOpenBooking }) {
   const milestones = [
     {
       year: '1999',
+      tag: 'ORIGIN & ETHOS',
+      phase: 'Foundation Era',
       title: 'Foundation of Mitkar Builders & Developers',
       desc: 'Established with a core conviction: uncompromising civil engineering rigor, honest pricing, and transparency in Navi Mumbai.'
     },
     {
       year: '2008',
+      tag: 'PALM BEACH CORRIDOR',
+      phase: 'Seawoods Expansion',
       title: 'Pioneering Seawoods Sector 50 & Palm Beach Corridor',
       desc: 'Delivered landmark residential towers like Apramit, N.M. Height, S.M. Heights, and Villa Castle setting new benchmarks in quality.'
     },
     {
       year: '2016',
+      tag: 'TRANSIT HUBS',
+      phase: 'Regional Scale',
       title: 'Expansion into Nerul, Ulwe, Kamothe & Taloja',
       desc: 'Delivered M. Com Pride, M. Tech Homes, M. Com Apartment, M. Com Shelter, and Anmol Heritage along major transit corridors.'
     },
     {
       year: '2024',
+      tag: 'FLAGSHIP ICON',
+      phase: 'Mixed Landmark',
       title: 'Jewel of Panvel: The Flagship Mixed Development',
       desc: 'Launched the grand 2-acre, 4-tower icon on M.G. Road with 26,000 sq.ft of podium lifestyle amenities.'
     },
     {
       year: '2026+',
+      tag: 'NEXT GENERATION',
+      phase: 'Smart Living',
       title: 'Future Horizons & Sustainable Smart Communities',
       desc: 'Expanding into ultra-luxury eco-penthouses, solar-grid communities, and commercial business arcades.'
     }
@@ -116,6 +126,15 @@ export default function LegacyPage({ onOpenBooking }) {
 
             {/* Right: Message & Commitments */}
             <div className="lg:col-span-8 text-left space-y-5">
+              <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                <span className="text-[11px] font-mono uppercase tracking-widest text-[#d4af37] font-semibold">
+                  LEADERSHIP PHILOSOPHY
+                </span>
+                <span className="text-[11px] font-mono text-gray-400">
+                  ESTABLISHED 1999 • NAVI MUMBAI
+                </span>
+              </div>
+
               <div className="relative pl-6 border-l-2 border-[#d4af37]/60 italic font-serif-luxury text-base sm:text-lg text-gray-200 leading-relaxed">
                 <Quote className="h-6 w-6 text-[#d4af37]/40 mb-2 not-italic" />
                 "Since 1999, we have delivered over 25+ landmark projects across prominent nodes of Navi Mumbai. A building is never just concrete and steel — it is a sanctuary where families nurture dreams across generations. Being grateful for our accomplishments, we will continue to add further value to our capabilities and commitments while emphasizing topmost international standards of quality and safety."
@@ -144,35 +163,117 @@ export default function LegacyPage({ onOpenBooking }) {
           </div>
         </div>
 
-        {/* Vision & Mission Cards (From official about-us page) */}
+        {/* Vision & Mission Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           
           {/* Vision */}
-          <div className="rounded-3xl border border-[#d4af37]/40 bg-gradient-to-b from-[#161822] to-[#0f1118] p-8 shadow-xl space-y-4 relative overflow-hidden">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#d4af37]/20 border border-[#d4af37]/40 text-[#f5d77f]">
-              <Eye className="h-6 w-6" />
+          <div className="rounded-3xl border border-[#d4af37]/40 bg-gradient-to-b from-[#161822] to-[#0f1118] p-7 sm:p-9 shadow-xl relative overflow-hidden flex flex-col justify-between group hover:border-[#d4af37]/70 transition-all">
+            {/* Subtle background watermark */}
+            <div className="absolute top-4 right-6 text-7xl font-serif-luxury font-black text-[#d4af37]/[0.05] select-none pointer-events-none group-hover:text-[#d4af37]/[0.09] transition-colors">
+              01
             </div>
-            <div>
-              <span className="text-[10px] font-mono text-[#d4af37] tracking-widest uppercase">FORWARD OUTLOOK</span>
-              <h3 className="text-2xl font-display font-bold text-white mt-1">Our Vision</h3>
+
+            <div className="space-y-5">
+              {/* Top Row: Icon + Title on left, Status / Pillar badge on top right */}
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#d4af37]/20 border border-[#d4af37]/40 text-[#f5d77f] shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                    <Eye className="h-7 w-7" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono text-[#d4af37] tracking-widest uppercase font-semibold">
+                      FORWARD OUTLOOK
+                    </span>
+                    <h3 className="text-2xl font-display font-bold text-white mt-0.5">
+                      Our Vision
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Top Right Alignment Badges */}
+                <div className="flex flex-col items-end gap-1 shrink-0 pt-1">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-[#d4af37]/40 bg-[#d4af37]/15 px-3 py-1 text-[11px] font-mono font-semibold text-[#f5d77f]">
+                    <Sparkles className="h-3 w-3" />
+                    <span>PILLAR 01</span>
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-gray-400">
+                    Skyline Creation
+                  </span>
+                </div>
+              </div>
+
+              {/* Description Paragraph */}
+              <p className="text-sm text-gray-300 leading-relaxed">
+                We see ourselves revitalizing the skyline of Navi Mumbai with landmarks of repute worth their weight in gold that appreciate in value with each passing day. Building tomorrow today and making Navi Mumbai smarter, livelier, healthier, and greener is centric to the Mitkar dream initiative.
+              </p>
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed">
-              We see ourselves revitalizing the skyline of Navi Mumbai with landmarks of repute worth their weight in gold that appreciate in value with each passing day. Building tomorrow today and making Navi Mumbai smarter, livelier, healthier, and greener is centric to the Mitkar dream initiative.
-            </p>
+
+            {/* Bottom Key Tenets */}
+            <div className="pt-6 mt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-gray-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-[#d4af37] shrink-0" />
+                <span>Sustainable Urban Communities</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-[#d4af37] shrink-0" />
+                <span>Long-Term Asset Value</span>
+              </div>
+            </div>
           </div>
 
           {/* Mission */}
-          <div className="rounded-3xl border border-white/10 bg-[#111319] p-8 shadow-xl space-y-4 relative overflow-hidden">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-white">
-              <Target className="h-6 w-6 text-[#d4af37]" />
+          <div className="rounded-3xl border border-white/15 bg-gradient-to-b from-[#13151d] to-[#0c0e14] p-7 sm:p-9 shadow-xl relative overflow-hidden flex flex-col justify-between group hover:border-[#d4af37]/50 transition-all">
+            {/* Subtle background watermark */}
+            <div className="absolute top-4 right-6 text-7xl font-serif-luxury font-black text-white/[0.03] select-none pointer-events-none group-hover:text-[#d4af37]/[0.06] transition-colors">
+              02
             </div>
-            <div>
-              <span className="text-[10px] font-mono text-gray-400 tracking-widest uppercase">OUR PROMISE</span>
-              <h3 className="text-2xl font-display font-bold text-white mt-1">Our Mission</h3>
+
+            <div className="space-y-5">
+              {/* Top Row: Icon + Title on left, Status / Pillar badge on top right */}
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-white shadow-inner">
+                    <Target className="h-7 w-7 text-[#d4af37]" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono text-gray-400 tracking-widest uppercase font-semibold">
+                      OUR PROMISE
+                    </span>
+                    <h3 className="text-2xl font-display font-bold text-white mt-0.5">
+                      Our Mission
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Top Right Alignment Badges */}
+                <div className="flex flex-col items-end gap-1 shrink-0 pt-1">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] font-mono font-semibold text-gray-200">
+                    <ShieldCheck className="h-3 w-3 text-[#d4af37]" />
+                    <span>PILLAR 02</span>
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-gray-400">
+                    On-Time Handovers
+                  </span>
+                </div>
+              </div>
+
+              {/* Description Paragraph */}
+              <p className="text-sm text-gray-300 leading-relaxed">
+                Our focus lies in guaranteeing real value for your money by maintaining unparalleled quality standards in all our projects and ensuring on-time delivery, every time. With zero compromise on structural integrity and transparent client dealings.
+              </p>
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed">
-              Our focus lies in guaranteeing real value for your money by maintaining unparalleled quality standards in all our projects and ensuring on-time delivery, every time. With zero compromise on structural integrity and transparent client dealings.
-            </p>
+
+            {/* Bottom Key Tenets */}
+            <div className="pt-6 mt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-gray-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-[#d4af37] shrink-0" />
+                <span>100% On-Time Execution</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-[#d4af37] shrink-0" />
+                <span>Seismic RCC Structural Rigor</span>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -193,10 +294,24 @@ export default function LegacyPage({ onOpenBooking }) {
                   <span className="h-2 w-2 rounded-full bg-[#d4af37]" />
                 </div>
 
-                <div className="p-6 rounded-2xl border border-white/10 bg-[#101217] group-hover:border-[#d4af37]/50 group-hover:bg-[#d4af37]/5 transition-all">
-                  <div className="inline-block rounded-full bg-[#d4af37]/20 px-3 py-0.5 text-xs font-mono font-bold text-[#f5d77f] mb-2 border border-[#d4af37]/30">
-                    {item.year}
+                <div className="p-6 sm:p-7 rounded-2xl border border-white/10 bg-[#101217] group-hover:border-[#d4af37]/50 group-hover:bg-[#d4af37]/5 transition-all">
+                  {/* Top Bar of Card: Year on left, Tag & Phase on top right */}
+                  <div className="flex items-center justify-between gap-4 mb-3">
+                    <div className="inline-block rounded-full bg-[#d4af37]/20 px-3 py-0.5 text-xs font-mono font-bold text-[#f5d77f] border border-[#d4af37]/30">
+                      {item.year}
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-mono text-[#d4af37] tracking-widest uppercase font-semibold">
+                        {item.tag}
+                      </span>
+                      <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-white/20" />
+                      <span className="hidden sm:inline-block text-[11px] font-mono text-gray-400">
+                        {item.phase}
+                      </span>
+                    </div>
                   </div>
+
                   <h4 className="text-lg font-display font-bold text-white group-hover:text-[#f5d77f] transition-colors">
                     {item.title}
                   </h4>
