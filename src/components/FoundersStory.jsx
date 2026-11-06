@@ -6,7 +6,7 @@ export default function FoundersStory() {
   const milestones = [
     {
       year: '1999',
-      title: 'Foundation by Civil Engineer Mr. Muzakki Mitkar',
+      title: 'Foundation of Mitkar Builders & Developers',
       desc: 'Established with a core conviction: uncompromising civil engineering rigor, honest pricing, and transparency.'
     },
     {
@@ -49,7 +49,7 @@ export default function FoundersStory() {
             THE MITKAR <span className="text-gold-gradient font-serif-luxury italic">LEGACY</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-300">
-            Guided by civil engineer Mr. Muzakki Mitkar’s philosophy of zero compromises in structural engineering, transparent dealings, and timely execution.
+            Guided by Mr. Tabrez Ahmed Mitkar’s philosophy of zero compromises in structural engineering, transparent dealings, and timely execution.
           </p>
         </div>
 
@@ -72,9 +72,9 @@ export default function FoundersStory() {
               </div>
 
               <div>
-                <h3 className="text-xl font-display font-bold text-white">Mr. Muzakki Mitkar</h3>
-                <div className="text-xs text-[#d4af37] font-semibold">Founder & Managing Director</div>
-                <div className="text-[11px] text-gray-400">Civil Engineer | 25+ Years Experience</div>
+                <h3 className="text-xl font-display font-bold text-white">Mr. Tabrez Ahmed Mitkar</h3>
+                <div className="text-xs text-[#d4af37] font-semibold">Managing Director & Owner</div>
+                <div className="text-[11px] text-gray-400">Mitkar Builders & Developers</div>
               </div>
             </div>
 

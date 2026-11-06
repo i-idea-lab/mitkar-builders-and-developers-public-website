@@ -13,7 +13,7 @@ export default function MetricsTicker() {
       value: 25,
       suffix: '+',
       label: 'Years of Engineering Legacy',
-      subtext: 'Founded in 1999 by Mr. Muzakki Mitkar',
+      subtext: 'Founded in 1999 • Led by Mr. Tabrez Ahmed Mitkar',
       icon: Award
     },
     {

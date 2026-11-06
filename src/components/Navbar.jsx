@@ -18,6 +18,7 @@ export default function Navbar({ onOpenBooking, soundActive, onToggleSound }) {
   }, []);
 
   const navLinks = [
+    { name: '21 High', to: '/project/21-high-nerul', badge: 'Flagship' },
     { name: 'Jewel of Panvel', to: '/project/jewel-of-panvel', badge: 'Flagship' },
     { name: 'Portfolio (25+)', to: '/portfolio' },
     { name: '25Y Legacy', to: '/legacy' },

@@ -27,7 +27,7 @@ export default function LegacyPage({ onOpenBooking }) {
   const milestones = [
     {
       year: '1999',
-      title: 'Foundation by Civil Engineer Mr. Muzakki Mitkar',
+      title: 'Foundation of Mitkar Builders & Developers',
       desc: 'Established with a core conviction: uncompromising civil engineering rigor, honest pricing, and transparency in Navi Mumbai.'
     },
     {
@@ -79,25 +79,38 @@ export default function LegacyPage({ onOpenBooking }) {
         <div className="rounded-3xl border border-[#d4af37]/30 bg-gradient-to-r from-[#141720] via-[#0d0f14] to-[#141720] p-6 sm:p-10 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            {/* Left: Founder Logo & Credentials */}
+            {/* Left: Leadership Portrait & Credentials */}
             <div className="lg:col-span-4 flex flex-col items-center text-center space-y-4">
-              <div className="relative w-56 rounded-3xl overflow-hidden border border-[#d4af37]/40 shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#12141a] flex items-center justify-center p-4">
-                <div className="h-full w-full rounded-2xl bg-gradient-to-br from-[#1a1c24] to-[#0a0c10] flex flex-col items-center justify-center text-center p-3 border border-white/5">
+              <div className="relative w-56 h-64 rounded-3xl overflow-hidden border border-[#d4af37]/40 shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#12141a] flex items-center justify-center p-2 group">
+                <div className="relative h-full w-full rounded-2xl bg-gradient-to-br from-[#1a1c24] to-[#0a0c10] overflow-hidden flex flex-col items-center justify-center text-center p-4 border border-white/5">
                   <img
-                    src="/mitkar-logo-white.png"
-                    alt="Mitkar Builders Official Logo"
-                    className="h-16 w-auto object-contain drop-shadow-[0_2px_12px_rgba(232,89,12,0.4)]"
+                    src="/tabrez-mitkar.jpg"
+                    alt="Mr. Tabrez Ahmed Mitkar"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      const fallback = e.target.nextElementSibling;
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                   />
-                  <div className="text-[9px] uppercase tracking-widest text-[#f5d77f] font-semibold mt-2">
-                    Engineering • Compassion • Integrity
+                  {/* Graceful Fallback if photo not yet loaded */}
+                  <div className="hidden flex-col items-center justify-center text-center space-y-3 z-10 w-full h-full">
+                    <img
+                      src="/mitkar-logo-white.png"
+                      alt="Mitkar Builders Official Logo"
+                      className="h-16 w-auto object-contain drop-shadow-[0_2px_12px_rgba(232,89,12,0.4)]"
+                    />
+                    <div className="text-[10px] uppercase tracking-widest text-[#f5d77f] font-semibold">
+                      Engineering • Trust • Vision
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-display font-bold text-white">Mr. Muzakki Mitkar</h3>
-                <div className="text-xs text-[#d4af37] font-semibold">Founder & Managing Director</div>
-                <div className="text-[11px] text-gray-400">Civil Engineer | 25+ Years Experience</div>
+                <h3 className="text-xl font-display font-bold text-white">Mr. Tabrez Ahmed Mitkar</h3>
+                <div className="text-xs text-[#d4af37] font-semibold">Managing Director & Owner</div>
+                <div className="text-[11px] text-gray-400">Mitkar Builders & Developers</div>
               </div>
             </div>
 

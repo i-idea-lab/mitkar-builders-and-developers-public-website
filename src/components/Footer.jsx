@@ -69,7 +69,7 @@ export default function Footer({ onOpenBooking }) {
             </div>
 
             <p className="text-xs text-gray-400 leading-relaxed">
-              Founded by civil engineer Mr. Muzakki Mitkar. For over 25 years, Mitkar Group has delivered premier residential and commercial landmarks across Seawoods, Nerul, Ulwe, and Panvel.
+              Led by Managing Director Mr. Tabrez Ahmed Mitkar. For over 25 years, Mitkar Group has delivered premier residential and commercial landmarks across Seawoods, Nerul, Ulwe, and Panvel.
             </p>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-3 text-xs space-y-1">

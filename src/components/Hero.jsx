@@ -151,7 +151,7 @@ export default function Hero({ onOpenBooking }) {
 
             {/* Subtitle */}
             <p ref={subtitleRef} className="max-w-2xl text-base sm:text-lg text-gray-300 font-normal leading-relaxed">
-              Founded by civil engineer <strong className="text-white font-semibold">Mr. Muzakki Mitkar</strong>, Mitkar Group has transformed Navi Mumbai’s skyline with 20+ delivered architectural landmarks. Discover our crowning marvel, <strong className="text-[#f5d77f] font-semibold">Jewel of Panvel</strong> — where luxury living meets 26,000 sq. ft. of podium lifestyle.
+              Led by Managing Director <strong className="text-white font-semibold">Mr. Tabrez Ahmed Mitkar</strong>, Mitkar Group has transformed Navi Mumbai’s skyline with 25+ delivered architectural landmarks. Discover our crowning marvel, <strong className="text-[#f5d77f] font-semibold">Jewel of Panvel</strong> and the ultra-exclusive <strong className="text-[#f5d77f] font-semibold">21 High</strong> in Nerul.
             </p>
 
             {/* CTAs */}
