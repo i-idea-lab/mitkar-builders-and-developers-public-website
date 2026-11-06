@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   Sparkles, 
@@ -16,9 +16,7 @@ import { soundFX } from '../utils/soundFx';
 
 export default function ProjectHeroBanner({ onOpenBooking }) {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const navigate = useNavigate();
-  const timerRef = useRef(null);
 
   const slides = [
     {
@@ -95,16 +93,14 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
     }
   ];
 
-  // Auto-play timer (every 5 seconds)
+  // Auto-play timer: auto-rotates every 3 seconds, and jumps back to the first slide once reaching the end
   useEffect(() => {
-    if (isPaused) return;
-
-    timerRef.current = setInterval(() => {
+    const timer = setTimeout(() => {
       setCurrentIdx((prev) => (prev + 1) % slides.length);
-    }, 5500);
+    }, 3000);
 
-    return () => clearInterval(timerRef.current);
-  }, [isPaused, slides.length]);
+    return () => clearTimeout(timer);
+  }, [currentIdx, slides.length]);
 
   const handlePrev = () => {
     soundFX.playClick();
@@ -134,8 +130,6 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
   return (
     <section 
       className="relative min-h-[92vh] lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#07080a] text-white pt-24 pb-12"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
     >
       {/* Background Project Photography Layer with Crossfade */}
       {slides.map((slide, idx) => (
