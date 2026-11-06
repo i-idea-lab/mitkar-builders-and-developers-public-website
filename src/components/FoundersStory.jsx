@@ -68,16 +68,16 @@ export default function FoundersStory() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            {/* Left: Founder Seal & Official Logo */}
+            {/* Left: Founder Portrait & Official Credentials */}
             <div className="lg:col-span-4 flex flex-col items-center text-center space-y-4">
-              <div className="relative w-56 rounded-3xl overflow-hidden border border-[#d4af37]/40 shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#12141a] flex items-center justify-center p-4">
-                <div className="h-full w-full rounded-2xl bg-gradient-to-br from-[#1a1c24] to-[#0a0c10] flex flex-col items-center justify-center text-center p-3 border border-white/5">
+              <div className="relative w-56 h-64 rounded-3xl overflow-hidden border border-[#d4af37]/40 shadow-[0_0_30px_rgba(212,175,55,0.25)] bg-[#12141a] flex items-center justify-center p-2 group">
+                <div className="relative h-full w-full rounded-2xl bg-gradient-to-br from-[#1a1c24] to-[#0a0c10] overflow-hidden flex flex-col items-center justify-center text-center border border-white/5">
                   <img
-                    src="/mitkar-logo-white.png"
-                    alt="Mitkar Builders & Developers Official Logo"
-                    className="h-16 w-auto object-contain drop-shadow-[0_2px_12px_rgba(232,89,12,0.4)]"
+                    src="/tabrez-mitkar.jpg"
+                    alt="Mr. Tabrez Ahmed Mitkar - Managing Director & Owner, Mitkar Builders"
+                    className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="text-[9px] uppercase tracking-widest text-[#f5d77f] font-semibold mt-2">Engineering • Trust • Vision</div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
                 </div>
               </div>
 
