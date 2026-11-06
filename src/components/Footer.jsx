@@ -93,6 +93,12 @@ export default function Footer({ onOpenBooking }) {
             </h4>
             <ul className="space-y-2 text-xs text-gray-400">
               <li>
+                <Link to="/project/21-high-nerul" className="hover:text-[#f5d77f] transition-colors flex items-center justify-between">
+                  <span>21 High (Nerul)</span>
+                  <span className="text-[9px] text-[#d4af37] font-semibold">Flagship</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/project/jewel-of-panvel" className="hover:text-[#f5d77f] transition-colors flex items-center justify-between">
                   <span>Jewel of Panvel (M.G. Road)</span>
                   <span className="text-[9px] text-[#d4af37] font-semibold">Flagship</span>
@@ -100,10 +106,6 @@ export default function Footer({ onOpenBooking }) {
               </li>
               <li><Link to="/project/apramit-seawoods" className="hover:text-white transition-colors">Apramit (Seawoods)</Link></li>
               <li><Link to="/project/nm-heights" className="hover:text-white transition-colors">N. M. Height (Seawoods)</Link></li>
-              <li><Link to="/project/m-com-pride" className="hover:text-white transition-colors">M. Com Pride (Seawoods)</Link></li>
-              <li><Link to="/project/villa-castle" className="hover:text-white transition-colors">Villa Castle (Seawoods)</Link></li>
-              <li><Link to="/project/m-tech-homes" className="hover:text-white transition-colors">M. Tech Homes (Nerul)</Link></li>
-              <li><Link to="/project/anmol-heritage" className="hover:text-white transition-colors">Anmol Heritage (Ulwe)</Link></li>
               <li className="pt-1">
                 <Link to="/portfolio" className="text-[#f5d77f] font-semibold hover:underline flex items-center gap-1">
                   <span>View All 25+ Projects &rarr;</span>
