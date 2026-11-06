@@ -31,8 +31,9 @@ export default function HomeHero() {
 
   return (
     <section
+      id="heritage-hero-section"
       ref={containerRef}
-      className="relative pt-28 pb-14 lg:pt-36 lg:pb-16 flex items-center justify-center overflow-hidden"
+      className="relative py-20 lg:py-28 flex items-center justify-center overflow-hidden border-t border-[#d4af37]/20"
     >
       {/* Animated GSAP Moving Net Checkered Grid Background (Unchanged) */}
       <AnimatedGridBackground />

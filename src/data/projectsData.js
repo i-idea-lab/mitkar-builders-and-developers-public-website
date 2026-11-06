@@ -1,5 +1,45 @@
 export const projectsData = [
   {
+    id: "21-high-nerul",
+    name: "21 High",
+    tagline: "One Residence Per Floor • Ultra-Luxury",
+    category: "Signature / Ongoing",
+    type: "Boutique Whole-Floor Residences",
+    location: "Nerul, Navi Mumbai",
+    coordinates: "19.0330, 73.0197",
+    rera: "P520000xxxxx",
+    status: "Under Construction",
+    possession: "Dec 2026",
+    landParcel: "Exclusive Low-Density Boutique Tower",
+    towers: ["21 High Signature Tower"],
+    priceStarting: "₹ 4.05 Cr*",
+    carpetAreaRange: "1,446 sq.ft RERA Carpet Area",
+    heroImage: "/hero-showcase/showcase-02.jpg",
+    gallery: [
+      "/hero-showcase/showcase-02.jpg",
+      "/hero-showcase/showcase-01.jpg",
+      "/hero-showcase/showcase-03.jpg",
+      "/hero-showcase/showcase-04.jpg"
+    ],
+    overview: "A rare opportunity in prime Nerul. What if your entire floor belonged only to you? 21 High presents an elite collection of ultra-spacious 4 BHK residences with only one residence per floor across 1,446 sq.ft RERA carpet area, complete with private elevator access and wraparound sun decks.",
+    highlights: [
+      "Exclusive One Residence Per Floor (Complete Floor Privacy)",
+      "Ultra-Spacious 4 BHK Layout with 1,446 Sq.Ft RERA Carpet Area",
+      "Prime Central Nerul Location with Rapid Highway Connectivity",
+      "Floor-to-Ceiling Acoustic Glazing with Wraparound Balcony",
+      "Italian Marble Living Foyer, Travertine Finishes & Modular Layouts"
+    ],
+    configurations: [
+      {
+        type: "4 BHK Presidential Floor Suite",
+        carpetArea: "1,446 Sq. Ft. (RERA)",
+        balcony: "Panoramic Sunset Verandah",
+        layout: "4 Master Bedrooms, Private Living Foyer, Dining Nook & Modular Kitchen",
+        price: "₹ 4.05 Cr* Onwards"
+      }
+    ]
+  },
+  {
     id: "jewel-of-panvel",
     name: "Jewel of Panvel",
     tagline: "The Crown Jewel of Old Panvel",
