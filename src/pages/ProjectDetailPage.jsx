@@ -22,6 +22,7 @@ import { soundFX } from '../utils/soundFx';
 import AmenitiesExplorer from '../components/AmenitiesExplorer';
 import FloorPlanViewer from '../components/FloorPlanViewer';
 import ConnectivityMap from '../components/ConnectivityMap';
+import TwentyOneHighExplorer from '../components/TwentyOneHighExplorer';
 
 export default function ProjectDetailPage({ onOpenBooking }) {
   const { projectId } = useParams();
@@ -34,6 +35,7 @@ export default function ProjectDetailPage({ onOpenBooking }) {
 
   const project = projectsData.find((p) => p.id === projectId) || projectsData[0];
   const isJewelOfPanvel = project.id === 'jewel-of-panvel';
+  const isTwentyOneHigh = project.id === '21-high-nerul';
 
   // Other projects for bottom recommendations
   const otherProjects = projectsData.filter((p) => p.id !== project.id);
@@ -221,8 +223,13 @@ export default function ProjectDetailPage({ onOpenBooking }) {
         </>
       )}
 
-      {/* Non-Jewel Projects Configuration Grid */}
-      {!isJewelOfPanvel && project.configurations && (
+      {/* If 21 High Nerul, show the Exclusive Multi-Photo Architectural Showcase & Luxury Layout Explorer */}
+      {isTwentyOneHigh && (
+        <TwentyOneHighExplorer onOpenBooking={onOpenBooking} />
+      )}
+
+      {/* Non-Flagship Projects Configuration Grid */}
+      {!isJewelOfPanvel && !isTwentyOneHigh && project.configurations && (
         <section className="py-16 bg-[#0a0c10] border-y border-white/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto space-y-2 mb-10">
