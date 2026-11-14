@@ -123,7 +123,7 @@ export default function Navbar({ onOpenBooking, soundActive, onToggleSound }) {
               title="Call Mitkar Builders"
             >
               <Phone className="h-3.5 w-3.5 text-[#d4af37]" />
-              <span className="font-mono text-[11px] font-semibold">+91 73044 51177</span>
+              <span className="font-mono text-[11px] font-semibold">73044 51177</span>
             </a>
 
             {/* VIP Site Visit Booking CTA */}
