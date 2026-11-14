@@ -58,14 +58,14 @@ export default function HomeHero() {
         </div>
 
         {/* Cinematic Kinetic Headline */}
-        <h1 ref={headlineRef} className="font-display text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-5xl mx-auto">
+        <h1 ref={headlineRef} className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-5xl mx-auto">
           <span className="block text-white">
             ENGINEERING TOMORROW’S
           </span>
           <span className="block text-gold-gradient font-serif-luxury italic font-medium">
             LANDMARKS ACROSS NAVI MUMBAI
           </span>
-          <span className="block text-silver-gradient text-2xl sm:text-4xl xl:text-5xl font-light tracking-wide mt-2">
+          <span className="block text-silver-gradient text-2xl sm:text-3xl lg:text-3xl xl:text-5xl font-light tracking-wide mt-2">
             Seawoods • Nerul • Ulwe • Panvel
           </span>
         </h1>

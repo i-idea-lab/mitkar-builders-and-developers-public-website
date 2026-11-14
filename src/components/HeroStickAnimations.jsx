@@ -398,13 +398,13 @@ export default function HeroStickAnimations() {
   // Four safe positioning zones framing the central text within the exact vertical height of the content
   const zones = [
     // Zone 0: Top-Left (aligned with the upper content height)
-    'left-0 sm:left-4 lg:left-8 top-0 sm:top-2',
+    'left-0 sm:left-4 lg:left-2 xl:left-8 top-0 sm:top-1 lg:top-1 xl:top-2 origin-top-left',
     // Zone 1: Top-Right (aligned with the upper content height)
-    'right-0 sm:right-4 lg:right-8 top-0 sm:top-2',
+    'right-0 sm:right-4 lg:right-2 xl:right-8 top-0 sm:top-1 lg:top-1 xl:top-2 origin-top-right',
     // Zone 2: Bottom-Left (aligned with the lower content height)
-    'left-0 sm:left-4 lg:left-10 bottom-0 sm:bottom-2',
+    'left-0 sm:left-4 lg:left-2 xl:left-10 bottom-0 sm:bottom-1 lg:bottom-1 xl:bottom-2 origin-bottom-left',
     // Zone 3: Bottom-Right (aligned with the lower content height)
-    'right-0 sm:right-4 lg:right-10 bottom-0 sm:bottom-2',
+    'right-0 sm:right-4 lg:right-2 xl:right-10 bottom-0 sm:bottom-1 lg:bottom-1 xl:bottom-2 origin-bottom-right',
   ];
 
   const items = [
@@ -439,7 +439,7 @@ export default function HeroStickAnimations() {
   }, [items.length, zones.length]);
 
   return (
-    <div className="pointer-events-none absolute inset-0 w-full h-full overflow-hidden select-none z-10 hidden lg:block">
+    <div className="pointer-events-none absolute inset-0 w-full h-full overflow-hidden select-none z-10 hidden lg:landscape:block xl:block">
       <style>{`
         @keyframes streakGlide {
           0% { stroke-dashoffset: 0; }
@@ -455,8 +455,8 @@ export default function HeroStickAnimations() {
         ref={elementRef}
         className={`absolute transition-all duration-700 ease-out transform ${zones[zoneIdx]} ${
           visible
-            ? 'opacity-85 scale-100 translate-y-0'
-            : 'opacity-0 scale-95 translate-y-2'
+            ? 'opacity-85 scale-[0.62] xl:scale-100 translate-y-0'
+            : 'opacity-0 scale-[0.56] xl:scale-95 translate-y-2'
         }`}
       >
         {items[currentIdx]}
