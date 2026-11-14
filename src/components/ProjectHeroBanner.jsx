@@ -59,7 +59,7 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
       id: "21-high-interiors",
       projectId: "21-high-nerul",
       title: "SPACIOUS. ELEGANT. UNCOMPROMISING.",
-      tagline: "Travertine accents, Italian marble foyers & expansive sunlit suites.",
+      tagline: "Travertine accents, Italian marble foyers & sunlit suites.",
       badge: "Luxury Living • 21 High",
       location: "Nerul, Navi Mumbai",
       price: "4 Master Bedrooms",
@@ -82,7 +82,7 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
     {
       id: "21-high-floorplan",
       projectId: "21-high-nerul",
-      title: "ENGINEERED FOR A LIFE BEYOND ORDINARY",
+      title: "ENGINEERED FOR A LIFE\nBEYOND ORDINARY",
       tagline: "Exemplary civil engineering with zero dead space.",
       badge: "Architectural Layout • Nerul",
       location: "1st to 8th Typical Floor Plan",
@@ -141,7 +141,7 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
         >
           <img
             src={slide.image}
-            alt={slide.title}
+            alt={slide.title.replace('\n', ' ')}
             className={`w-full h-full object-cover object-center transform transition-transform duration-[7000ms] ease-out ${
               idx === currentIdx ? 'scale-105' : 'scale-100'
             }`}
@@ -183,7 +183,7 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
               <span>{s.location}</span>
             </div>
 
-            <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)]">
+            <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] whitespace-pre-line">
               {s.title}
             </h1>
           </div>
@@ -209,7 +209,7 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
             <button
               onClick={() => {
                 soundFX.playClick();
-                onOpenBooking(s.title);
+                onOpenBooking(s.title.replace('\n', ' '));
               }}
               onMouseEnter={() => soundFX.playHover()}
               className="flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f7d884] to-[#aa820a] px-6 sm:px-8 py-3.5 text-xs sm:text-sm font-bold text-black shadow-[0_0_30px_rgba(212,175,55,0.35)] hover:scale-105 active:scale-95 transition-all"
@@ -246,12 +246,12 @@ export default function ProjectHeroBanner({ onOpenBooking }) {
                     ? 'border-[#d4af37] ring-2 ring-[#d4af37]/60 scale-105'
                     : 'border-white/15 opacity-60 hover:opacity-100 hover:border-white/40'
                 }`}
-                title={slide.title}
+                title={slide.title.replace('\n', ' ')}
               >
                 <div className="w-14 sm:w-16 h-10 sm:h-12 relative bg-black">
                   <img
                     src={slide.image}
-                    alt={slide.title}
+                    alt={slide.title.replace('\n', ' ')}
                     className="w-full h-full object-cover"
                   />
                   {idx === currentIdx && (
